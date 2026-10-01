@@ -1,0 +1,8 @@
+title: Accessibility Skills for AI Agents
+description: Accessibility Skills for AI Agents
+author: JamalMazrui
+theme: jekyll-theme-cayman
+markdown: kramdown
+kramdown:
+  input: GFM
+  toc_levels: 2..3

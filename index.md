@@ -1,12 +1,16 @@
 ---
 title: "Accessibility Skills for AI Agents"
 lang: en
+license: "CC BY-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
 ---
 {% raw %}
 
 # Accessibility Skills for AI Agents
 
 175 agent skills about accessibility from 8 public GitHub repositories, as published on 30 September 2026. Each entry gives the skill's facts, its description and its full text, with a link to its source.
+
+Each skill keeps the license named in its entry, under which its full text is reproduced here: 142 are MIT and 33 are under the GNU Affero General Public License, version 3. This page's own text and arrangement are available under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
 ## Contents
 
@@ -200,7 +204,7 @@ lang: en
     - [Web A11y Dynamic UI](#web-a11y-dynamic-ui)
 - [Licenses](#licenses)
 
-## Introduction
+## Introduction {#introduction}
 
 ### About this directory
 
@@ -212,7 +216,7 @@ A skill is included when its own subject is accessibility, or when it belongs to
 
 A **skill** is a folder that teaches an AI agent how to do one kind of task. Its one required file, `SKILL.md`, opens with a short header in YAML that gives the skill's `name` and a `description` of when to use it, followed by instructions in Markdown. The folder may also hold scripts, reference documents and other files the instructions point to. An agent reads only the names and descriptions until a task matches one, and then loads that skill's instructions, so a large library of skills costs little until it is used.
 
-The format is the Agent Skills open standard, first published by Anthropic in December 2025 and specified at [agentskills.io][agentskills]. Many agents read it, among them Claude Code, OpenAI Codex, Google Antigravity, GitHub Copilot (in its command line interface and in Visual Studio Code), Gemini CLI and Cursor. They differ mainly in where they look for skills: for example `.claude/skills` for Claude Code, `.agents/skills` for Codex and Antigravity, and `.github/skills` for Copilot, each holding one folder per skill.
+The format is the Agent Skills open standard, introduced by Anthropic in October 2025, published as an open standard in December 2025 and specified at [agentskills.io][agentskills]. Many agents read it, among them Claude Code, OpenAI Codex, Google Antigravity, GitHub Copilot (in its command line interface and in Visual Studio Code), Gemini CLI and Cursor. They differ mainly in where they look for skills: for example `.claude/skills` for Claude Code, `.agents/skills` for Codex and Antigravity, and `.github/skills` for Copilot, each holding one folder per skill.
 
 Three related terms are often confused with skills:
 
@@ -245,9 +249,9 @@ Testing shows the widest range of approaches. Community Access chains scanners, 
 
 Some subjects have a single main source. Only Community Access checks Office files, PDF, ePub and Markdown, and only it works GitHub itself from the editor. Desktop and screen reader work is split among Community Access (platform accessibility interfaces, NVDA add-ons, testing with screen readers), Seth Hobson (screen reader testing of web pages) and HomerDev (Windows programs, JAWS scripts and NVDA add-ons for screen reader users). Several collections also include a lead or orchestrator skill that routes work to the others.
 
-## ARIA, Components and Interaction
+## ARIA, Components and Interaction {#aria-components-and-interaction}
 
-### Alt Text and Headings
+### Alt Text and Headings {#alt-text-and-headings}
 
 - **Domain:** web
 - **Effort:** medium
@@ -441,7 +445,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Anchor Links
+### Anchor Links {#anchor-links}
 
 - **Files in the skill:** 2
 - **License:** GNU Affero General Public License, version 3
@@ -907,7 +911,7 @@ is Level AAA). The guard is still required as a progressive enhancement baseline
 
 **Skill text ends.**
 
-### ARIA Live Regions
+### ARIA Live Regions {#aria-live-regions}
 
 - **Files in the skill:** 3
 - **License:** GNU Affero General Public License, version 3
@@ -1351,7 +1355,7 @@ assertion is not proof an AT announced it correctly.
 
 **Skill text ends.**
 
-### ARIA Specialist
+### ARIA Specialist {#aria-specialist}
 
 - **Domain:** web
 - **Effort:** medium
@@ -1412,7 +1416,7 @@ Always hide icons from screen readers. They create verbosity.
 
 Never leave an icon-only button without an accessible name. Never let an SVG be visible to assistive technology when there is already visible text.
 
-#### Forms
+#### Forms {#forms}
 
 - Every input needs a `<label>` with matching `for` attribute
 - Group related inputs with `<fieldset>` and `<legend>`
@@ -2040,7 +2044,7 @@ client-side validation.
 
 **Skill text ends.**
 
-### Forms Specialist
+### Forms Specialist {#forms-specialist}
 
 - **Domain:** web
 - **Effort:** medium
@@ -2230,7 +2234,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Image Alt Text
+### Image Alt Text {#image-alt-text}
 
 - **Files in the skill:** 2
 - **License:** GNU Affero General Public License, version 3
@@ -2654,7 +2658,7 @@ results, and route confirmed issues through `skills/bug-reporting/SKILL.md`.
 
 **Skill text ends.**
 
-### Internationalization Accessibility
+### Internationalization Accessibility {#internationalization-accessibility}
 
 - **Domain:** web
 - **Effort:** medium
@@ -2745,7 +2749,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Keyboard
+### Keyboard {#keyboard}
 
 - **Files in the skill:** 2
 - **License:** GNU Affero General Public License, version 3
@@ -3284,7 +3288,7 @@ keyboard walkthroughs for every new or changed interaction pattern.
 
 **Skill text ends.**
 
-### Keyboard Navigator
+### Keyboard Navigator {#keyboard-navigator}
 
 - **Domain:** web
 - **Effort:** medium
@@ -3451,7 +3455,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Link Checker
+### Link Checker {#link-checker}
 
 - **Domain:** web
 - **Effort:** medium
@@ -3628,7 +3632,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Live Region Controller
+### Live Region Controller {#live-region-controller}
 
 - **Domain:** web
 - **Effort:** medium
@@ -3763,7 +3767,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Modal Specialist
+### Modal Specialist {#modal-specialist}
 
 - **Domain:** web
 - **Effort:** medium
@@ -3928,7 +3932,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Navigation
+### Navigation {#navigation}
 
 - **Files in the skill:** 3
 - **License:** GNU Affero General Public License, version 3
@@ -4461,7 +4465,7 @@ keyboard, screen reader, magnification, and touch testing.
 
 **Skill text ends.**
 
-### Tables
+### Tables {#tables}
 
 - **Files in the skill:** 3
 - **License:** GNU Affero General Public License, version 3
@@ -5087,7 +5091,7 @@ exported formats preserve structure.
 
 **Skill text ends.**
 
-### Tables and Data Specialist
+### Tables and Data Specialist {#tables-and-data-specialist}
 
 - **Domain:** web
 - **Effort:** medium
@@ -5268,7 +5272,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Web A11y Forms
+### Web A11y Forms {#web-a11y-forms}
 
 - **Files in the skill:** 2
 - **License:** MIT
@@ -5314,7 +5318,7 @@ Document labeling strategy, validation flow, error recovery, focus behavior, and
 
 **Skill text ends.**
 
-### Web A11y Navigation
+### Web A11y Navigation {#web-a11y-navigation}
 
 - **License:** MIT
 - **Name:** `web-a11y-navigation`
@@ -5356,7 +5360,7 @@ Explain landmark labels, current state, skip-link strategy, keyboard behavior, a
 
 **Skill text ends.**
 
-### Web A11y Web Components
+### Web A11y Web Components {#web-a11y-web-components}
 
 - **License:** MIT
 - **Name:** `web-a11y-web-components`
@@ -5398,7 +5402,7 @@ Document component contract, Shadow DOM constraints, focus behavior, and manual 
 
 **Skill text ends.**
 
-### Web Component Specialist
+### Web Component Specialist {#web-component-specialist}
 
 - **Domain:** web
 - **Effort:** medium
@@ -5450,9 +5454,9 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-## Content, Design and Cognition
+## Content, Design and Cognition {#content-design-and-cognition}
 
-### Charts Graphs
+### Charts Graphs {#charts-graphs}
 
 - **Files in the skill:** 2
 - **License:** GNU Affero General Public License, version 3
@@ -6032,7 +6036,7 @@ accessibility does not automatically transfer to an export.
 
 **Skill text ends.**
 
-### Cognitive Accessibility
+### Cognitive Accessibility {#cognitive-accessibility}
 
 - **Domain:** web
 - **Effort:** medium
@@ -6092,7 +6096,7 @@ Ask the user:
 
 Beyond WCAG, assess alignment with COGA's "Making Content Usable" guidance. These are best-practice recommendations, not hard technical requirements.
 
-##### Plain Language
+##### Plain Language {#plain-language}
 
 Review all instructional text, error messages, tooltips, and UI copy:
 
@@ -6182,7 +6186,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Cognitive Accessibility (Reference)
+### Cognitive Accessibility (Reference) {#cognitive-accessibility-reference}
 
 - **Domain:** cross-cutting
 - **Effort:** low
@@ -6501,7 +6505,7 @@ The wizard invokes `cognitive-accessibility` as part of Phase 3 (Forms and Input
 
 **Skill text ends.**
 
-### Color Contrast
+### Color Contrast {#color-contrast}
 
 - **Files in the skill:** 2
 - **License:** GNU Affero General Public License, version 3
@@ -6956,7 +6960,7 @@ token tests don't cover.
 
 **Skill text ends.**
 
-### Content Design
+### Content Design {#content-design}
 
 - **Files in the skill:** 2
 - **License:** GNU Affero General Public License, version 3
@@ -7213,7 +7217,7 @@ load `skills/tables/SKILL.md`.)
 
 **Skill text ends.**
 
-### Contrast Master
+### Contrast Master {#contrast-master}
 
 - **Domain:** web
 - **Effort:** medium
@@ -7395,7 +7399,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Data Visualization Accessibility
+### Data Visualization Accessibility {#data-visualization-accessibility}
 
 - **Domain:** web
 - **Effort:** medium
@@ -7442,7 +7446,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Data Visualization Accessibility (Reference)
+### Data Visualization Accessibility (Reference) {#data-visualization-accessibility-reference}
 
 - **Domain:** cross-cutting
 - **Effort:** low
@@ -7695,7 +7699,7 @@ Each key, with its action.
 
 **Skill text ends.**
 
-### Design System (Reference)
+### Design System (Reference) {#design-system-reference}
 
 - **Domain:** cross-cutting
 - **Effort:** low
@@ -8198,7 +8202,7 @@ Each finding, with its severity.
 
 **Skill text ends.**
 
-### Design System Auditor
+### Design System Auditor {#design-system-auditor}
 
 - **Domain:** web
 - **Effort:** medium
@@ -8370,7 +8374,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Light Dark Mode
+### Light Dark Mode {#light-dark-mode}
 
 - **Files in the skill:** 2
 - **License:** GNU Affero General Public License, version 3
@@ -9204,7 +9208,7 @@ existing approach.
 
 **Skill text ends.**
 
-### Mermaid
+### Mermaid {#mermaid}
 
 - **Files in the skill:** 2
 - **License:** GNU Affero General Public License, version 3
@@ -9754,7 +9758,7 @@ order is meaningful, or the diagram is understandable — manual and user review
 
 **Skill text ends.**
 
-### Performance Accessibility
+### Performance Accessibility {#performance-accessibility}
 
 - **Domain:** web
 - **Effort:** medium
@@ -10152,7 +10156,7 @@ Run these checks before publishing:
 
 **Skill text ends.**
 
-### Text Quality Reviewer
+### Text Quality Reviewer {#text-quality-reviewer}
 
 - **Domain:** web
 - **Effort:** medium
@@ -10315,9 +10319,9 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-## Desktop Apps, Mobile Apps and Tool Building
+## Desktop Apps, Mobile Apps and Tool Building {#desktop-apps-mobile-apps-and-tool-building}
 
-### Accessibility Tool Builder
+### Accessibility Tool Builder {#accessibility-tool-builder}
 
 - **Domain:** developer
 - **Effort:** medium
@@ -10411,7 +10415,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Desktop Accessibility Specialist
+### Desktop Accessibility Specialist {#desktop-accessibility-specialist}
 
 - **Domain:** desktop
 - **Effort:** medium
@@ -10554,7 +10558,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Desktop Accessibility Testing Coach
+### Desktop Accessibility Testing Coach {#desktop-accessibility-testing-coach}
 
 - **Domain:** desktop
 - **Effort:** medium
@@ -10708,7 +10712,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Mobile Accessibility
+### Mobile Accessibility {#mobile-accessibility}
 
 - **Domain:** web
 - **Effort:** medium
@@ -10880,7 +10884,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Mobile Accessibility (Reference)
+### Mobile Accessibility (Reference) {#mobile-accessibility-reference}
 
 - **Domain:** cross-cutting
 - **Effort:** low
@@ -11274,7 +11278,7 @@ appId: com.example.myapp
 
 **Skill text ends.**
 
-### Python Development (Reference)
+### Python Development (Reference) {#python-development-reference}
 
 - **Domain:** cross-cutting
 - **Effort:** low
@@ -11575,7 +11579,7 @@ For deeper expertise, the skill routes to these specialists:
 
 **Skill text ends.**
 
-### Python Specialist
+### Python Specialist {#python-specialist}
 
 - **Domain:** developer
 - **Effort:** medium
@@ -11717,7 +11721,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### wxPython Specialist
+### wxPython Specialist {#wxpython-specialist}
 
 - **Domain:** developer
 - **Effort:** medium
@@ -11857,9 +11861,9 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-## Documents, Office Files and Markdown
+## Documents, Office Files and Markdown {#documents-office-files-and-markdown}
 
-### Cross-Document Analyzer
+### Cross-Document Analyzer {#cross-document-analyzer}
 
 - **Domain:** documents
 - **Effort:** low
@@ -12009,7 +12013,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Document Accessibility Wizard
+### Document Accessibility Wizard {#document-accessibility-wizard}
 
 - **Domain:** documents
 - **Effort:** high
@@ -12117,7 +12121,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Document CSV Reporter
+### Document CSV Reporter {#document-csv-reporter}
 
 - **Domain:** documents
 - **Effort:** low
@@ -12265,7 +12269,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Document Inventory
+### Document Inventory {#document-inventory}
 
 - **Domain:** documents
 - **Effort:** low
@@ -12389,7 +12393,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Document Scanning (Reference)
+### Document Scanning (Reference) {#document-scanning-reference}
 
 - **Domain:** cross-cutting
 - **Effort:** low
@@ -12513,7 +12517,7 @@ When delegating to a sub-agent, always provide this context block:
 
 **Skill text ends.**
 
-### ePub Accessibility
+### ePub Accessibility {#epub-accessibility}
 
 - **Domain:** documents
 - **Effort:** medium
@@ -12639,7 +12643,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### ePub Scan Config
+### ePub Scan Config {#epub-scan-config}
 
 - **Domain:** documents
 - **Effort:** low
@@ -12764,7 +12768,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Excel Accessibility
+### Excel Accessibility {#excel-accessibility}
 
 - **Domain:** documents
 - **Effort:** medium
@@ -12936,7 +12940,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Markdown Accessibility (Reference)
+### Markdown Accessibility (Reference) {#markdown-accessibility-reference}
 
 - **Domain:** cross-cutting
 - **Effort:** low
@@ -13119,7 +13123,7 @@ Flag for human review: `sequenceDiagram`, `classDiagram`, `erDiagram`, `stateDia
 
 ##### Mermaid Replacement Template
 
-```markdown
+````markdown
 [Generated or user-provided text description - this is the primary accessible content]
 
 <details>
@@ -13130,7 +13134,7 @@ Flag for human review: `sequenceDiagram`, `classDiagram`, `erDiagram`, `stateDia
 ```
 
 </details>
-```
+````
 
 ##### ASCII Diagram Detection
 
@@ -13274,7 +13278,7 @@ Diagram types and description guidance:
 
 Wrapping template:
 
-```markdown
+````markdown
 [Generated or user-provided text description]
 
 <details>
@@ -13285,7 +13289,7 @@ Wrapping template:
 ```
 
 </details>
-```
+````
 
 #### Fix Templates
 
@@ -13378,7 +13382,7 @@ Command: `npx --yes markdownlint-cli2 <filepath>`
 
 **Skill text ends.**
 
-### Markdown Accessibility Assistant
+### Markdown Accessibility Assistant {#markdown-accessibility-assistant}
 
 - **Domain:** markdown
 - **Effort:** high
@@ -13478,7 +13482,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Markdown CSV Reporter
+### Markdown CSV Reporter {#markdown-csv-reporter}
 
 - **Domain:** markdown
 - **Effort:** low
@@ -13625,7 +13629,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Markdown Fixer
+### Markdown Fixer {#markdown-fixer}
 
 - **Domain:** markdown
 - **Effort:** low
@@ -13812,7 +13816,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Markdown Scanner
+### Markdown Scanner {#markdown-scanner}
 
 - **Domain:** markdown
 - **Effort:** low
@@ -13997,7 +14001,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Office Remediation (Reference)
+### Office Remediation (Reference) {#office-remediation-reference}
 
 - **Domain:** cross-cutting
 - **Effort:** low
@@ -14306,7 +14310,7 @@ Each property, with its file and XML element.
 
 **Skill text ends.**
 
-### Office Remediator
+### Office Remediator {#office-remediator}
 
 - **Domain:** documents
 - **Effort:** medium
@@ -14427,7 +14431,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Office Scan Config
+### Office Scan Config {#office-scan-config}
 
 - **Domain:** documents
 - **Effort:** low
@@ -14571,7 +14575,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### PDF Accessibility
+### PDF Accessibility {#pdf-accessibility}
 
 - **Domain:** documents
 - **Effort:** medium
@@ -14716,7 +14720,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### PDF Remediator
+### PDF Remediator {#pdf-remediator}
 
 - **Domain:** documents
 - **Effort:** medium
@@ -14796,7 +14800,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### PDF Scan Config
+### PDF Scan Config {#pdf-scan-config}
 
 - **Domain:** documents
 - **Effort:** low
@@ -14930,7 +14934,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### PowerPoint Accessibility
+### PowerPoint Accessibility {#powerpoint-accessibility}
 
 - **Domain:** documents
 - **Effort:** medium
@@ -15107,7 +15111,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Word Accessibility
+### Word Accessibility {#word-accessibility}
 
 - **Domain:** documents
 - **Effort:** medium
@@ -15241,9 +15245,9 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-## GitHub and Project Workflow
+## GitHub and Project Workflow {#github-and-project-workflow}
 
-### Actions Manager
+### Actions Manager {#actions-manager}
 
 - **Domain:** github
 - **Effort:** medium
@@ -15322,7 +15326,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Analytics
+### Analytics {#analytics}
 
 - **Domain:** github
 - **Effort:** medium
@@ -15434,7 +15438,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Contributions Hub
+### Contributions Hub {#contributions-hub}
 
 - **Domain:** github
 - **Effort:** medium
@@ -15545,7 +15549,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Daily Briefing
+### Daily Briefing {#daily-briefing}
 
 - **Domain:** github
 - **Effort:** medium
@@ -15627,7 +15631,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Github Analytics Scoring (Reference)
+### Github Analytics Scoring (Reference) {#github-analytics-scoring-reference}
 
 - **Domain:** cross-cutting
 - **Effort:** low
@@ -15900,7 +15904,7 @@ When project boards are configured, track sprint metrics:
 
 **Skill text ends.**
 
-### GitHub Hub
+### GitHub Hub {#github-hub}
 
 - **Domain:** github
 - **Effort:** high
@@ -15988,7 +15992,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### GitHub Shared Instructions (Reference)
+### GitHub Shared Instructions (Reference) {#github-shared-instructions-reference}
 
 - **Domain:** cross-cutting
 - **Effort:** low
@@ -16451,7 +16455,7 @@ A machine-readable registry of authoritative sources is maintained at `.github/a
 
 **Skill text ends.**
 
-### Github Workflow Standards (Reference)
+### Github Workflow Standards (Reference) {#github-workflow-standards-reference}
 
 - **Domain:** cross-cutting
 - **Effort:** low
@@ -16857,7 +16861,7 @@ Sort by **urgency**, not just recency:
 
 **Skill text ends.**
 
-### Insiders Accessibility Tracker
+### Insiders Accessibility Tracker {#insiders-accessibility-tracker}
 
 - **Domain:** github
 - **Effort:** medium
@@ -17002,7 +17006,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Issue Tracker
+### Issue Tracker {#issue-tracker}
 
 - **Domain:** github
 - **Effort:** medium
@@ -17157,7 +17161,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Notifications Manager
+### Notifications Manager {#notifications-manager}
 
 - **Domain:** github
 - **Effort:** medium
@@ -17232,7 +17236,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Projects Manager
+### Projects Manager {#projects-manager}
 
 - **Domain:** github
 - **Effort:** medium
@@ -17315,7 +17319,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Release Manager
+### Release Manager {#release-manager}
 
 - **Domain:** github
 - **Effort:** medium
@@ -17390,7 +17394,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Repository Admin
+### Repository Admin {#repository-admin}
 
 - **Domain:** github
 - **Effort:** medium
@@ -17531,7 +17535,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Repository Manager
+### Repository Manager {#repository-manager}
 
 - **Domain:** github
 - **Effort:** medium
@@ -17709,7 +17713,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Security Dashboard
+### Security Dashboard {#security-dashboard}
 
 - **Domain:** github
 - **Effort:** medium
@@ -17801,7 +17805,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Team Manager
+### Team Manager {#team-manager}
 
 - **Domain:** github
 - **Effort:** medium
@@ -17922,7 +17926,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Template Builder
+### Template Builder {#template-builder}
 
 - **Domain:** github
 - **Effort:** medium
@@ -18079,7 +18083,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Wiki Manager
+### Wiki Manager {#wiki-manager}
 
 - **Domain:** github
 - **Effort:** medium
@@ -18165,9 +18169,9 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-## Homer Development Kit
+## Homer Development Kit {#homer-development-kit}
 
-### app-help-guide
+### app-help-guide {#app-help-guide}
 
 - **Files in the skill:** 10
 - **License:** MIT
@@ -18261,7 +18265,7 @@ address with its status, and the reason for anything not kept.
 
 **Skill text ends.**
 
-### blind-creators
+### blind-creators {#blind-creators}
 
 - **Files in the skill:** 7
 - **License:** MIT
@@ -18430,7 +18434,7 @@ The console stays short; the log has everything.
 
 **Skill text ends.**
 
-### homer-build-release
+### homer-build-release {#homer-build-release}
 
 - **Files in the skill:** 6
 - **License:** MIT
@@ -18517,7 +18521,7 @@ built before the apps.
 
 **Skill text ends.**
 
-### homer-code
+### homer-code {#homer-code}
 
 - **Files in the skill:** 2
 - **License:** MIT
@@ -18600,7 +18604,7 @@ built, so they are the kit's current rules.
 
 **Skill text ends.**
 
-### homer-convert
+### homer-convert {#homer-convert}
 
 - **Files in the skill:** 4
 - **License:** MIT
@@ -18690,7 +18694,7 @@ without the mark as the Homer rule says, and reports what it changed.
 
 **Skill text ends.**
 
-### homer-docs
+### homer-docs {#homer-docs}
 
 - **Files in the skill:** 4
 - **License:** MIT
@@ -18772,7 +18776,7 @@ answer.
 
 **Skill text ends.**
 
-### homer-elevate
+### homer-elevate {#homer-elevate}
 
 - **License:** MIT
 - **Name:** `homer-elevate`
@@ -18860,7 +18864,7 @@ releases page.
 
 **Skill text ends.**
 
-### homer-installer
+### homer-installer {#homer-installer}
 
 - **Files in the skill:** 2
 - **License:** MIT
@@ -18934,7 +18938,7 @@ components.md.
 
 **Skill text ends.**
 
-### homer-migrate
+### homer-migrate {#homer-migrate}
 
 - **Files in the skill:** 2
 - **License:** MIT
@@ -18996,7 +19000,7 @@ RepoFiles.txt leaves out, which is the point.
 
 **Skill text ends.**
 
-### homer-new-app
+### homer-new-app {#homer-new-app}
 
 - **License:** MIT
 - **Name:** `homer-new-app`
@@ -19102,7 +19106,7 @@ page and to Homer Resources.
 
 **Skill text ends.**
 
-### homer-screen-reader
+### homer-screen-reader {#homer-screen-reader}
 
 - **Files in the skill:** 4
 - **License:** MIT
@@ -19191,7 +19195,7 @@ load or a key that answers "Unknown script call".
 
 **Skill text ends.**
 
-### homer-tutorial
+### homer-tutorial {#homer-tutorial}
 
 - **License:** MIT
 - **Name:** `homer-tutorial`
@@ -19356,7 +19360,7 @@ tutorials. Its scenarios are the kit's own walks, useful as worked examples.
 
 **Skill text ends.**
 
-### homer-ui
+### homer-ui {#homer-ui}
 
 - **License:** MIT
 - **Name:** `homer-ui`
@@ -19460,7 +19464,7 @@ unless another order is clearly more logical.
 
 **Skill text ends.**
 
-### podcast-directory
+### podcast-directory {#podcast-directory}
 
 - **Files in the skill:** 5
 - **License:** MIT
@@ -19601,9 +19605,9 @@ shrink very large directories.
 
 **Skill text ends.**
 
-## Leads, Orchestrators and Core Instructions
+## Leads, Orchestrators and Core Instructions {#leads-orchestrators-and-core-instructions}
 
-### Accessibility Agents Core
+### Accessibility Agents Core {#accessibility-agents-core}
 
 - **Domain:** cross-cutting
 - **Effort:** low
@@ -19723,7 +19727,7 @@ moderate and minimal live in `templates/`.
 
 **Skill text ends.**
 
-### Accessibility General
+### Accessibility General {#accessibility-general}
 
 - **License:** GNU Affero General Public License, version 3
 - **Modified:** on 30 September 2026, for this page: headings moved down and links written as reference links; wording unchanged
@@ -20006,7 +20010,7 @@ npx skills add mikemai2awesome/agent-skills --skill frontend-a11y
 
 **Skill text ends.**
 
-### Accessibility Lead
+### Accessibility Lead {#accessibility-lead}
 
 - **Domain:** web
 - **Effort:** high
@@ -20103,7 +20107,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Critic Workflow
+### Critic Workflow {#critic-workflow}
 
 - **License:** GNU Affero General Public License, version 3
 - **Modified:** on 30 September 2026, for this page: headings moved down and links written as reference links; wording unchanged
@@ -20666,7 +20670,7 @@ The Critic workflow is essential for ensuring that AI-assisted accessibility wor
 
 **Skill text ends.**
 
-### Developer Hub
+### Developer Hub {#developer-hub}
 
 - **Domain:** developer
 - **Effort:** high
@@ -20753,7 +20757,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Planner Workflow
+### Planner Workflow {#planner-workflow}
 
 - **License:** GNU Affero General Public License, version 3
 - **Modified:** on 30 September 2026, for this page: headings moved down and links written as reference links; wording unchanged
@@ -20959,7 +20963,7 @@ The Planner ensures that ambiguous or complex accessibility work is routed appro
 
 **Skill text ends.**
 
-### Web A11y Orchestrator
+### Web A11y Orchestrator {#web-a11y-orchestrator}
 
 - **License:** MIT
 - **Name:** `web-a11y-orchestrator`
@@ -21047,9 +21051,9 @@ Decision:
 
 **Skill text ends.**
 
-## Media and Email
+## Media and Email {#media-and-email}
 
-### Audio Video
+### Audio Video {#audio-video}
 
 - **Files in the skill:** 2
 - **License:** GNU Affero General Public License, version 3
@@ -21558,7 +21562,7 @@ delivery quality. Manual content and interaction review is required.
 
 **Skill text ends.**
 
-### Email Accessibility
+### Email Accessibility {#email-accessibility}
 
 - **Domain:** web
 - **Effort:** medium
@@ -21605,7 +21609,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Email Accessibility (Reference)
+### Email Accessibility (Reference) {#email-accessibility-reference}
 
 - **Domain:** cross-cutting
 - **Effort:** low
@@ -21793,7 +21797,7 @@ Each check, with its WCAG SC and priority.
 
 **Skill text ends.**
 
-### Media Accessibility
+### Media Accessibility {#media-accessibility}
 
 - **Domain:** web
 - **Effort:** medium
@@ -21862,7 +21866,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Media Accessibility (Reference)
+### Media Accessibility (Reference) {#media-accessibility-reference}
 
 - **Domain:** cross-cutting
 - **Effort:** low
@@ -22058,9 +22062,9 @@ Each issue, with its WCAG SC and severity.
 
 **Skill text ends.**
 
-## Screen Readers and Assistive Technology
+## Screen Readers and Assistive Technology {#screen-readers-and-assistive-technology}
 
-### NVDA Add-on Specialist
+### NVDA Add-on Specialist {#nvda-add-on-specialist}
 
 - **Domain:** desktop
 - **Effort:** medium
@@ -22208,7 +22212,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Screen Reader Lab
+### Screen Reader Lab {#screen-reader-lab}
 
 - **Domain:** web
 - **Effort:** medium
@@ -22302,7 +22306,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Screen Reader Testing
+### Screen Reader Testing {#screen-reader-testing}
 
 - **License:** MIT
 - **Name:** `screen-reader-testing`
@@ -22850,7 +22854,7 @@ function logAccessibleName(element) {
 
 **Skill text ends.**
 
-### Speech Recognition
+### Speech Recognition {#speech-recognition}
 
 - **Files in the skill:** 2
 - **License:** GNU Affero General Public License, version 3
@@ -23287,9 +23291,9 @@ environment and investigate before assigning a standards failure.
 
 **Skill text ends.**
 
-## Standards, Law and Reporting
+## Standards, Law and Reporting {#standards-law-and-reporting}
 
-### Accessibility
+### Accessibility {#accessibility}
 
 - **Author:** web-quality-skills
 - **Files in the skill:** 3
@@ -23714,7 +23718,7 @@ npm install @axe-core/cli -g
 axe https://example.com
 ```
 
-###### Manual testing
+###### Manual testing {#manual-testing}
 
 - [ ] **Keyboard navigation:** Tab through entire page, use Enter/Space to activate
 - [ ] **Screen reader:** Test with VoiceOver (Mac), NVDA (Windows), or TalkBack (Android)
@@ -23762,7 +23766,7 @@ See the [screen reader commands reference](references/A11Y-PATTERNS.md#screen-re
 
 **Skill text ends.**
 
-### Accessibility Compliance
+### Accessibility Compliance {#accessibility-compliance}
 
 - **Files in the skill:** 5
 - **License:** MIT
@@ -23824,7 +23828,7 @@ Detailed pattern documentation lives in `references/details.md`. Read that file 
 
 **Skill text ends.**
 
-### Accessibility Rules (Reference)
+### Accessibility Rules (Reference) {#accessibility-rules-reference}
 
 - **Domain:** cross-cutting
 - **Effort:** low
@@ -23975,7 +23979,7 @@ Each standard, with its scope and key rules.
 
 **Skill text ends.**
 
-### Accessibility Statement
+### Accessibility Statement {#accessibility-statement}
 
 - **Domain:** cross-cutting
 - **Effort:** medium
@@ -24047,7 +24051,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Compliance Mapping
+### Compliance Mapping {#compliance-mapping}
 
 - **Domain:** cross-cutting
 - **Effort:** medium
@@ -24102,7 +24106,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Help Url Reference (Reference)
+### Help Url Reference (Reference) {#help-url-reference-reference}
 
 - **Domain:** cross-cutting
 - **Effort:** low
@@ -24363,7 +24367,7 @@ Each rule, with its fix steps.
 
 **Skill text ends.**
 
-### Legal Compliance Mapping (Reference)
+### Legal Compliance Mapping (Reference) {#legal-compliance-mapping-reference}
 
 - **Domain:** cross-cutting
 - **Effort:** low
@@ -24481,7 +24485,7 @@ Each event, with its date and impact.
 
 **Skill text ends.**
 
-### Report Generation (Reference)
+### Report Generation (Reference) {#report-generation-reference}
 
 - **Domain:** cross-cutting
 - **Effort:** low
@@ -24604,7 +24608,7 @@ When comparing against a baseline audit report:
 
 **Skill text ends.**
 
-### Severity Mapping (Reference)
+### Severity Mapping (Reference) {#severity-mapping-reference}
 
 - **Domain:** cross-cutting
 - **Effort:** low
@@ -24681,7 +24685,7 @@ Document and markdown audits do not use confidence multipliers -- they use the b
 
 **Skill text ends.**
 
-### WCAG 3.0 Preview
+### WCAG 3.0 Preview {#wcag-3.0-preview}
 
 - **Domain:** cross-cutting
 - **Effort:** medium
@@ -24773,7 +24777,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### WCAG AAA
+### WCAG AAA {#wcag-aaa}
 
 - **Domain:** cross-cutting
 - **Effort:** medium
@@ -24876,7 +24880,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### WCAG Guide
+### WCAG Guide {#wcag-guide}
 
 - **Domain:** cross-cutting
 - **Effort:** medium
@@ -25035,7 +25039,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Web Accessibility
+### Web Accessibility {#web-accessibility}
 
 - **Files in the skill:** 17
 - **License:** MIT
@@ -25098,7 +25102,7 @@ Stop when each acceptance criterion has direct evidence or a recorded failed, bl
 
 **Skill text ends.**
 
-### Web CSV Reporter
+### Web CSV Reporter {#web-csv-reporter}
 
 - **Domain:** web
 - **Effort:** low
@@ -25222,7 +25226,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Web Severity Scoring (Reference)
+### Web Severity Scoring (Reference) {#web-severity-scoring-reference}
 
 - **Domain:** cross-cutting
 - **Effort:** low
@@ -25488,9 +25492,9 @@ This metadata allows deterministic re-runs and audit-to-audit comparisons.
 
 **Skill text ends.**
 
-## Testing, Scanning and Review
+## Testing, Scanning and Review {#testing-scanning-and-review}
 
-### A11y Ally
+### A11y Ally {#a11y-ally}
 
 - **Also published at:** `assets/skills/a11y-ally/SKILL.md`
 - **Category (source):** specialized-testing
@@ -27185,7 +27189,7 @@ ROI = (Impact × Users%) / Effort_Hours
 
 **Skill text ends.**
 
-### Accessibility Regression Detector
+### Accessibility Regression Detector {#accessibility-regression-detector}
 
 - **Domain:** cross-cutting
 - **Effort:** medium
@@ -27242,7 +27246,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Accessibility Testing
+### Accessibility Testing {#accessibility-testing}
 
 - **Also published at:** `assets/skills/accessibility-testing/SKILL.md`
 - **Category (source):** specialized-testing
@@ -27487,7 +27491,7 @@ const a11yFleet = await FleetManager.coordinate({
 
 **Skill text ends.**
 
-### Axe Rules
+### Axe Rules {#axe-rules}
 
 - **Files in the skill:** 2
 - **License:** GNU Affero General Public License, version 3
@@ -27741,7 +27745,7 @@ test('No WCAG 2.x AA violations', async ({ page }) => {
 
 **Skill text ends.**
 
-### Behavioral A11y
+### Behavioral A11y {#behavioral-a11y}
 
 - **Files in the skill:** 2
 - **License:** GNU Affero General Public License, version 3
@@ -28067,7 +28071,7 @@ different check.
 
 **Skill text ends.**
 
-### Bug Reporting
+### Bug Reporting {#bug-reporting}
 
 - **Files in the skill:** 2
 - **License:** GNU Affero General Public License, version 3
@@ -28688,7 +28692,7 @@ Do not close an issue only because the original automated rule passes — the
 implementation may have changed the selector, hidden the tested node, or
 introduced a different barrier.
 
-##### Actionable Findings and Repeatability
+##### Actionable Findings and Repeatability {#actionable-findings-and-repeatability}
 
 A finding can be valid and worth preserving before the team has enough
 evidence to act on it. Use three destinations, not one undifferentiated
@@ -28908,7 +28912,7 @@ For the complete list, see the [WCAG 2.2 Quick Reference][r248].
 
 **Skill text ends.**
 
-### CI Accessibility
+### CI Accessibility {#ci-accessibility}
 
 - **Domain:** cross-cutting
 - **Effort:** medium
@@ -29001,7 +29005,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### CI CD
+### CI CD {#ci-cd}
 
 - **Files in the skill:** 2
 - **License:** GNU Affero General Public License, version 3
@@ -29565,7 +29569,7 @@ deterministic tooling before AI when it can answer the question.
 
 **Skill text ends.**
 
-### Ci Integration (Reference)
+### Ci Integration (Reference) {#ci-integration-reference}
 
 - **Domain:** cross-cutting
 - **Effort:** low
@@ -29598,7 +29602,7 @@ Patterns, templates, and reference data for integrating automated accessibility 
 
 #### axe-core CLI Reference
 
-##### Installation
+##### Installation {#installation}
 
 ```bash
 npm install --save-dev @axe-core/cli
@@ -29778,7 +29782,7 @@ Each axe-core impact, with its CI priority and action.
 
 **Skill text ends.**
 
-### CLI Audit
+### CLI Audit {#cli-audit}
 
 - **Files in the skill:** 2
 - **License:** GNU Affero General Public License, version 3
@@ -29871,7 +29875,7 @@ If no issues are found, report residual risk clearly:
 
 **Skill text ends.**
 
-### Cross-Page Analyzer
+### Cross-Page Analyzer {#cross-page-analyzer}
 
 - **Domain:** web
 - **Effort:** low
@@ -30021,7 +30025,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Github A11y Scanner (Reference)
+### Github A11y Scanner (Reference) {#github-a11y-scanner-reference}
 
 - **Domain:** cross-cutting
 - **Effort:** low
@@ -30264,7 +30268,7 @@ org:{ORGNAME} is:issue label:accessibility sort:created-desc
 
 **Skill text ends.**
 
-### Github Scanning (Reference)
+### Github Scanning (Reference) {#github-scanning-reference}
 
 - **Domain:** cross-cutting
 - **Effort:** low
@@ -30508,7 +30512,7 @@ When the same item appears in multiple searches (e.g., an issue you're both assi
 
 **Skill text ends.**
 
-### Lighthouse Bridge
+### Lighthouse Bridge {#lighthouse-bridge}
 
 - **Domain:** web
 - **Effort:** low
@@ -30702,7 +30706,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Lighthouse Scanner (Reference)
+### Lighthouse Scanner (Reference) {#lighthouse-scanner-reference}
 
 - **Domain:** cross-cutting
 - **Effort:** low
@@ -31429,7 +31433,7 @@ alone; light and dark modes; forced colors mode.
 
 **Skill text ends.**
 
-### Opquast Digital Quality
+### Opquast Digital Quality {#opquast-digital-quality}
 
 - **Files in the skill:** 2
 - **License:** GNU Affero General Public License, version 3
@@ -31805,7 +31809,7 @@ extends well beyond it into security, privacy, e-commerce, and performance.
 
 **Skill text ends.**
 
-### Playwright Scanner
+### Playwright Scanner {#playwright-scanner}
 
 - **Domain:** web
 - **Effort:** low
@@ -31899,7 +31903,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Playwright Testing (Reference)
+### Playwright Testing (Reference) {#playwright-testing-reference}
 
 - **Domain:** cross-cutting
 - **Effort:** low
@@ -32190,7 +32194,7 @@ Each WCAG SC, with its description and playwright tool.
 
 **Skill text ends.**
 
-### Playwright Verifier
+### Playwright Verifier {#playwright-verifier}
 
 - **Domain:** web
 - **Effort:** low
@@ -32339,7 +32343,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Pull Request Review
+### Pull Request Review {#pull-request-review}
 
 - **Domain:** github
 - **Effort:** medium
@@ -32472,7 +32476,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### QE A11y Ally
+### QE A11y Ally {#qe-a11y-ally}
 
 - **License:** MIT
 - **Name:** `qe-a11y-ally`
@@ -34131,7 +34135,7 @@ ROI = (Impact × Users%) / Effort_Hours
 
 **Skill text ends.**
 
-### QE Accessibility Testing
+### QE Accessibility Testing {#qe-accessibility-testing}
 
 - **License:** MIT
 - **Name:** `qe-accessibility-testing`
@@ -34348,7 +34352,7 @@ const a11yFleet = await FleetManager.coordinate({
 
 **Skill text ends.**
 
-### QE Visual Accessibility
+### QE Visual Accessibility {#qe-visual-accessibility}
 
 - **Also published at:** `.kiro/skills/qe-visual-accessibility/SKILL.md`, `assets/skills/qe-visual-accessibility/SKILL.md`
 - **Files in the skill:** 4
@@ -34633,7 +34637,7 @@ visual_testing:
 
 **Skill text ends.**
 
-### Scanner Bridge
+### Scanner Bridge {#scanner-bridge}
 
 - **Domain:** web
 - **Effort:** low
@@ -34743,7 +34747,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Testing Coach
+### Testing Coach {#testing-coach}
 
 - **Domain:** web
 - **Effort:** medium
@@ -34908,7 +34912,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Testing Strategy (Reference)
+### Testing Strategy (Reference) {#testing-strategy-reference}
 
 - **Domain:** cross-cutting
 - **Effort:** low
@@ -35068,7 +35072,7 @@ Each key, with its action.
 
 **Skill text ends.**
 
-### WCAG Audit Patterns
+### WCAG Audit Patterns {#wcag-audit-patterns}
 
 - **Files in the skill:** 2
 - **License:** MIT
@@ -35159,7 +35163,7 @@ Detailed pattern documentation lives in `references/details.md`. Read that file 
 
 **Skill text ends.**
 
-### Web A11y Debugging
+### Web A11y Debugging {#web-a11y-debugging}
 
 - **License:** MIT
 - **Name:** `web-a11y-debugging`
@@ -35206,7 +35210,7 @@ Provide confirmed defects, evidence, reproduction steps, fix direction, tool lim
 
 **Skill text ends.**
 
-### Web A11y Review
+### Web A11y Review {#web-a11y-review}
 
 - **Files in the skill:** 2
 - **License:** MIT
@@ -35257,7 +35261,7 @@ Regression check: <test or manual step>
 
 **Skill text ends.**
 
-### Web A11y Testing
+### Web A11y Testing {#web-a11y-testing}
 
 - **Files in the skill:** 2
 - **License:** MIT
@@ -35309,7 +35313,7 @@ Include scope, tools used, pass/fail results, reproduction steps for failures, a
 
 **Skill text ends.**
 
-### Web Accessibility Wizard
+### Web Accessibility Wizard {#web-accessibility-wizard}
 
 - **Domain:** web
 - **Effort:** high
@@ -35415,7 +35419,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Web Issue Fixer
+### Web Issue Fixer {#web-issue-fixer}
 
 - **Domain:** web
 - **Effort:** low
@@ -35530,7 +35534,7 @@ Authoritative specifications for this skill: `skills/a11y-core/references/source
 
 **Skill text ends.**
 
-### Web Scanning (Reference)
+### Web Scanning (Reference) {#web-scanning-reference}
 
 - **Domain:** cross-cutting
 - **Effort:** low
@@ -35728,9 +35732,9 @@ Each profile, with its phases and thoroughness.
 
 **Skill text ends.**
 
-## Web Authoring Practices
+## Web Authoring Practices {#web-authoring-practices}
 
-### Framework Accessibility (Reference)
+### Framework Accessibility (Reference) {#framework-accessibility-reference}
 
 - **Domain:** cross-cutting
 - **Effort:** low
@@ -35962,7 +35966,7 @@ Each background, with its minimum text and ratio.
 
 **Skill text ends.**
 
-### Maps
+### Maps {#maps}
 
 - **Files in the skill:** 2
 - **License:** GNU Affero General Public License, version 3
@@ -36514,7 +36518,7 @@ testing are required.
 
 **Skill text ends.**
 
-### Path Instructions (Reference)
+### Path Instructions (Reference) {#path-instructions-reference}
 
 - **Domain:** cross-cutting
 - **Effort:** low
@@ -36555,7 +36559,7 @@ costs more than the rules are worth on any single task.
 
 **Skill text ends.**
 
-### Print
+### Print {#print}
 
 - **Files in the skill:** 2
 - **License:** GNU Affero General Public License, version 3
@@ -36932,7 +36936,7 @@ styles, but screen-version violations also affect print output.
 
 **Skill text ends.**
 
-### Progressive Enhancement
+### Progressive Enhancement {#progressive-enhancement}
 
 - **Files in the skill:** 2
 - **License:** GNU Affero General Public License, version 3
@@ -37206,7 +37210,7 @@ reach **Serious**.
 
 **Skill text ends.**
 
-### SVG
+### SVG {#svg}
 
 - **Files in the skill:** 2
 - **License:** GNU Affero General Public License, version 3
@@ -37799,7 +37803,7 @@ pass replaces manual SVG review.
 
 **Skill text ends.**
 
-### Tooltips
+### Tooltips {#tooltips}
 
 - **Files in the skill:** 2
 - **License:** GNU Affero General Public License, version 3
@@ -38215,7 +38219,7 @@ behavior for `title`. Do not use `title` as the only:
 
 **Skill text ends.**
 
-### Touch Pointer
+### Touch Pointer {#touch-pointer}
 
 - **Files in the skill:** 3
 - **License:** GNU Affero General Public License, version 3
@@ -38736,7 +38740,7 @@ understandable. Manual testing remains required.
 
 **Skill text ends.**
 
-### Upstream First
+### Upstream First {#upstream-first}
 
 - **License:** GNU Affero General Public License, version 3
 - **Modified:** on 30 September 2026, for this page: headings moved down and links written as reference links; wording unchanged
@@ -38864,7 +38868,7 @@ if this project tracks findings with that schema.
 
 **Skill text ends.**
 
-### User Personalization
+### User Personalization {#user-personalization}
 
 - **Files in the skill:** 2
 - **License:** GNU Affero General Public License, version 3
@@ -39348,7 +39352,7 @@ personalization/AT features in usability testing.
 
 **Skill text ends.**
 
-### Web A11y Authoring
+### Web A11y Authoring {#web-a11y-authoring}
 
 - **Files in the skill:** 2
 - **License:** MIT
@@ -39409,7 +39413,7 @@ Describe semantic choices, ARIA states used, non-text content decisions, keyboar
 
 **Skill text ends.**
 
-### Web A11y CSS
+### Web A11y CSS {#web-a11y-css}
 
 - **License:** MIT
 - **Name:** `web-a11y-css`
@@ -39450,7 +39454,7 @@ List preference modes tested, risky CSS properties used, and any semantic integr
 
 **Skill text ends.**
 
-### Web A11y Dynamic UI
+### Web A11y Dynamic UI {#web-a11y-dynamic-ui}
 
 - **License:** MIT
 - **Name:** `web-a11y-dynamic-ui`
@@ -39491,7 +39495,7 @@ Document update announcement strategy, focus strategy, table/result semantics, a
 
 **Skill text ends.**
 
-## Licenses
+## Licenses {#licenses}
 
 Each skill is shared under its repository's license, reproduced here as published. The copyright in each skill stays with its authors.
 

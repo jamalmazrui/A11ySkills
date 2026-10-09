@@ -6,8 +6,6 @@ license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
 ---
 {% raw %}
 
-# Accessibility Skills for AI Agents
-
 175 agent skills about accessibility from 8 public GitHub repositories, as published on 30 September 2026. Each entry gives the skill's facts, its description and its full text, with a link to its source.
 
 Each skill keeps the license named in its entry, under which its full text is reproduced here: 142 are MIT and 33 are under the GNU Affero General Public License, version 3. This page's own text and arrangement are available under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).

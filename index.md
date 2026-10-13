@@ -1,5 +1,6 @@
 ---
 title: "Accessibility Skills for AI Agents"
+subtitle: \"A Directory of 175 Accessibility Skills from 8 Public GitHub Repositories"
 lang: en
 license: "CC BY-SA 4.0"
 license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
@@ -13,6 +14,7 @@ Each skill keeps the license named in its entry, under which its full text is re
 ## Contents
 
 - [Introduction](#introduction)
+- [By the Numbers](#by-the-numbers)
 - [ARIA, Components and Interaction](#aria-components-and-interaction)
     - [Alt Text and Headings](#alt-text-and-headings)
     - [Anchor Links](#anchor-links)
@@ -201,6 +203,12 @@ Each skill keeps the license named in its entry, under which its full text is re
     - [Web A11y CSS](#web-a11y-css)
     - [Web A11y Dynamic UI](#web-a11y-dynamic-ui)
 - [Licenses](#licenses)
+
+## By the Numbers {#by-the-numbers}
+
+- 175 skills, from 8 repositories; on average 22 skills a repository.
+- 81% of the skills (142) are under the MIT license; the rest are under the GNU Affero General Public License.
+- The largest group is Standards, Law and Reporting, with 15 skills.
 
 ## Introduction {#introduction}
 

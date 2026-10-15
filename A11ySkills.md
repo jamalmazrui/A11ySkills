@@ -1,6 +1,8 @@
 ---
 title: "Accessibility Skills for AI Agents"
 subtitle: \"A Directory of 175 Accessibility Skills from 8 Public GitHub Repositories"
+description: "A directory of accessibility skills for AI coding agents, gathered from public GitHub repositories, each with its facts, description, full text, and license."
+author: "Jamal Mazrui"
 lang: en
 license: "CC BY-SA 4.0"
 license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
